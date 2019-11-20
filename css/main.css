@@ -4,6 +4,14 @@ body {
     background-color: #fcf4ac;
 }
 
+#verticle-line {
+width: 1px;
+min-height: 400px;
+background: red;  
+margin:15px;  
+float:left
+}
+
 .bullet {
   text-indent: 50px;
 }
