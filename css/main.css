@@ -22,7 +22,7 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    color: #0000FF;
+    color: #0000A0;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -30,7 +30,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #ADD8E6;
+    color: #0000A0;
 }
 a:hover {
     text-decoration: underline;
