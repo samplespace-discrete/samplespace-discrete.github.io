@@ -38,6 +38,10 @@ body {
     }
   }
 
+  table, th, td {
+    border: 0px solid black;
+  }
+
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
