@@ -4,9 +4,9 @@ body {
     background-color: #fcf4ac;
 }
 
-#verticle-line {
-width: 1px;
-min-height: 400px;
+#horizontal-line {
+height: 1px;
+min-width: 400px;
 background: red;  
 margin:15px;  
 float:left
