@@ -6,13 +6,6 @@ body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
 }
 
-#horizontal-line {
-height: 1px;
-min-width: 400px;
-margin:15px;  
-float:left
-}
-
 .bullet {
   text-indent: 50px;
 }
@@ -54,12 +47,10 @@ p {
     color: #000000;
 }
 footer {
-    border-top: 2px solid #c7c086;
-    font-size: 1.0em;
+    font-size: 2.0em;
 }
 nav {
-    border-bottom: 2px solid #c7c086;
-    font-size: 1.0em;
+    font-size: 2.0em;
 }
 
 ul.posts { 
