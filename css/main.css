@@ -8,7 +8,6 @@ body {
 #horizontal-line {
 height: 1px;
 min-width: 400px;
-background: red;  
 margin:15px;  
 float:left
 }
