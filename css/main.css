@@ -6,8 +6,23 @@ body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
 }
 
+div.dice {
+  float: left;
+  width: 32px;
+  background: #F5F5F5;
+  border: #999 1px solid;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+}
+
 #bullet {
   font-size: 1.5em;
+}
+
+#probcolor { 
+  text-align:justify;
 }
 
 .center {

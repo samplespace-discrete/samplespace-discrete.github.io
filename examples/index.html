@@ -6,35 +6,40 @@ title: Sample Space Examples
 	<p>Example 1: A spinner has 12 equal sectors colored yellow, light green, green, teal, light blue, blue, indigo, purple, pink, red pink, red, and orange. What is the probability of landing on each color after spinning this spinner?</p><br>
 		<img id="colorwheel" src="https://www.pngkey.com/png/full/305-3059540_blank-wheel-of-fortune.png" alt="Color Wheel" class="center">
 		<script>rotateAnimation("colorwheel",1);</script>
-
+	
+		<br><button>SPIN</button>
 		<br><p>Sample Space: {yellow, light green, green, teal, light blue, blue, indigo, purple, pink, red pink, red, orange}</p>
 
 <p>Probabilities:</p>
 
-<p>P(yellow)        =  1/12</p>
-<p>P(light green)   =  1/12</p>
-<p>P(green)         =  1/12</p>
-<p>P(teal)          =  1/12</p>
-<p>P(light blue)    =  1/12</p>
-<p>P(blue)          =  1/12</p>
-<p>P(indigo)        =  1/12</p>
-<p>P(purple)        =  1/12</p>
-<p>P(pink)          =  1/12</p>
-<p>P(redpink)       =  1/12</p>
-<p>P(red)           =  1/12</p>
-<p>P(orange)        =  1/12</p>
+<div id="probcolor">
+	<p>P(yellow)        =  1/12</p>
+	<p>P(light green)   =  1/12</p>
+	<p>P(green)         =  1/12</p>
+	<p>P(teal)          =  1/12</p>
+	<p>P(light blue)    =  1/12</p>
+	<p>P(blue)          =  1/12</p>
+	<p>P(indigo)        =  1/12</p>
+	<p>P(purple)        =  1/12</p>
+	<p>P(pink)          =  1/12</p>
+	<p>P(redpink)       =  1/12</p>
+	<p>P(red)           =  1/12</p>
+	<p>P(orange)        =  1/12</p>
+</div>
 
-<br><p>Example 2: What is the probability of each outcome when a single 6-sided die is rolled?</p>  
-<p>Sample Space: {1, 2, 3, 4, 5, 6}</p>
+<br><p>Example 2: What is the probability of each outcome when a single 6-sided die is rolled?</p><br>  
+<div id="die1" class="dice">0</div><br>
+<button onclick="rollDice()">ROLL</button>
+<br><p>Sample Space: {1, 2, 3, 4, 5, 6}</p>
 
 <p>Probabilities:</p> 
 
-<p>P(1)	 = 	1/6</p>
-<p>P(2)	 = 	1/6</p>
-<p>P(3)	 = 	1/6</p> 
-<p>P(4)	 = 	1/6</p>
-<p>P(5)	 = 	1/6</p>
-<p>P(6)	 = 	1/6</p>
+	<p>P(1)	 = 	1/6</p>
+	<p>P(2)	 = 	1/6</p>
+	<p>P(3)	 = 	1/6</p> 
+	<p>P(4)	 = 	1/6</p>
+	<p>P(5)	 = 	1/6</p>	
+	<p>P(6)	 = 	1/6</p>
 
 <br><p>Summary: The sample space of an experiment is the set of all possible outcomes for that experiment. You may have noticed that for each of the experiments above, the sum of the probabilities of each outcome is 1. This is no coincidence. <b>The sum of the probabilities of the distinct outcomes within a sample space is 1.</b></p>
 
