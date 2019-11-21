@@ -7,8 +7,8 @@ function Reset()
    var player2 = document.getElementById("player2");
    var dice= document.getElementById("dice");
    //Set initial positions
-   player1.style.top="298px";
-   player1.style.left="40px";
+   player1.style.top="350px";
+   player1.style.left="85px";
    player2.style.top="298px";
    player2.style.left="40px"
     };
