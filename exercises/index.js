@@ -9,8 +9,8 @@ function Reset()
    //Set initial positions
    player1.style.top="298px";
    player1.style.left="40px";
-   player2.style.top="298px";
-   player2.style.left="40px"
+   player2.style.top="350px";
+   player2.style.left="85px"
     };
 
 function Throw()
