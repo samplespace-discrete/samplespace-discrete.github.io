@@ -5,9 +5,7 @@ title: Sample Space Examples
 	<h1>{{ page.title }}</h1>
 	<p>Example 1: A spinner has 12 equal sectors colored yellow, light green, green, teal, light blue, blue, indigo, purple, pink, red pink, red, and orange. What is the probability of landing on each color after spinning this spinner?</p><br>
 		<img id="colorwheel" src="https://www.pngkey.com/png/full/305-3059540_blank-wheel-of-fortune.png" alt="Color Wheel" class="center">
-		<script>rotateAnimation("colorwheel",1);</script>
-	
-		<br><button>SPIN</button>
+		<br><button onclick="rotateAnimation("colorwheel",1)" class="center">SPIN</button>
 		<br><p>Sample Space: {yellow, light green, green, teal, light blue, blue, indigo, purple, pink, red pink, red, orange}</p>
 
 <p>Probabilities:</p>
@@ -28,8 +26,8 @@ title: Sample Space Examples
 </div>
 
 <br><p>Example 2: What is the probability of each outcome when a single 6-sided die is rolled?</p><br>  
-<div id="die1" class="dice">0</div><br>
-<button onclick="rollDice()">ROLL</button>
+<div id="die1" class="dice" class="center">0</div>
+<button onclick="rollDice()" class="center">ROLL</button>
 <br><p>Sample Space: {1, 2, 3, 4, 5, 6}</p>
 
 <p>Probabilities:</p> 
