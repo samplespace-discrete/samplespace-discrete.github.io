@@ -61,8 +61,6 @@ const exercises = [
    }
    ]
 
-
-
 function quizTemplate(){
    const output = [];
    
@@ -151,3 +149,9 @@ function showNextSlide() {
 function showPrevSlide() {
    showSlide(currentSlide - 1);
 }
+
+quizTemplate();
+showSlide(0);
+previousButton.addEventListener("click", showPrevSlide);
+nextButton.addEventListener("click", showNextSlide);
+submitButton.addEventListener('click', showResults);
