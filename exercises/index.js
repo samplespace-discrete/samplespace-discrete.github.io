@@ -194,11 +194,7 @@ const quizContainer = document.getElementById("quiz");
 })();
 */
 
-
-
-
-
-(function() {
+//(function() {
   const myQuestions = [
     {
       question: "Who is the strongest?",
@@ -342,4 +338,4 @@ const quizContainer = document.getElementById("quiz");
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
-})();
+//})();
