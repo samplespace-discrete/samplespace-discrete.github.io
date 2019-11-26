@@ -61,12 +61,19 @@ RESULTS BOX:
 -->
 
 <div class = "quiz-container">
-	<div id = "quiz"> </div>
+	<div id = "quiz"> 
+		quizTemplate();
+		
+		showSlide(0);
+		previousButton.addEventListener("click", showPrevSlide);
+		nextButton.addEventListener("click", showNextSlide);
+		submitButton.addEventListener('click', showResults);
+	</div>
 </div>
 
 <button id = "previous"> Previous Question </button>
 <button id = "next"> Next Question </button>
 <button id = "submit"> Submit Quiz </button>
 	
-<div id = "result"> </div>
+<div id = "result">  </div>
     
