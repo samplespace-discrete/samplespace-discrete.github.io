@@ -52,7 +52,7 @@ var exercisesPage = [
    ];
   
   
-var quizContainer = document.getElementbyId('quiz');
+var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('result');
 var submitButton = document.getElementById('submit');
 
