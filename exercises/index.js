@@ -194,7 +194,7 @@ const quizContainer = document.getElementById("quiz");
 })();
 */
 
-//(function() {
+(function() {
   const myQuestions = [
     {
       question: "Who is the strongest?",
@@ -275,7 +275,7 @@ const quizContainer = document.getElementById("quiz");
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
       // if answer is correct
-      if (userAnswer === currentQuestion.correctAnswer) {
+      if (userAnswer == currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
 
@@ -297,13 +297,13 @@ const quizContainer = document.getElementById("quiz");
     slides[n].classList.add("active-slide");
     currentSlide = n;
     
-    if (currentSlide === 0) {
+    if (currentSlide == 0) {
       previousButton.style.display = "none";
     } else {
       previousButton.style.display = "inline-block";
     }
     
-    if (currentSlide === slides.length - 1) {
+    if (currentSlide == slides.length - 1) {
       nextButton.style.display = "none";
       submitButton.style.display = "inline-block";
     } else {
@@ -338,4 +338,4 @@ const quizContainer = document.getElementById("quiz");
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
-//})();
+})();
