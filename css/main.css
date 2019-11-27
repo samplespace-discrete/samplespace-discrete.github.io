@@ -74,7 +74,13 @@ div.dice {
   content: "";
   clear: both;
   display: table;
-  margin: auto;
+}
+
+.row{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
