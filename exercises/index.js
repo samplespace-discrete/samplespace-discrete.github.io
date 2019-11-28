@@ -1,4 +1,3 @@
-//ginawa ko na lang array yung answers niyo since sure naman na 4 lang ang choices and mas madali kasi mag-iterate sa irray compared kung naka-object siya.
 var exercisesPage = [
     {
       question: "1.  What is the sample space for choosing an odd number from 1 to 11 at random?",
