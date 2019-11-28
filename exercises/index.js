@@ -79,8 +79,8 @@ function generateQuiz (exercisesPage, quizContainer, resultsContainer, submitBut
 			}
 			output.push
 			(
-				'<div class = "question">' + questions[i].question + '</div>' + '<div class = "answers">'
-				+ answers.join('') + '</div>'
+				'<div class="question">' + questions[i].question + '</div>'
+				+ '<div class="answers">' + answers.join('') + '</div>'
 				
 			);
 			
@@ -111,7 +111,7 @@ function generateQuiz (exercisesPage, quizContainer, resultsContainer, submitBut
 				quizAnswers[i].style.color = 'red';
 				
 			}
-			
+			resultsContainer.innerHTML = correctAnswers + ' out of ' + questions.length;
 		}
 		showQuestions (questions, quizContainer);
 		
