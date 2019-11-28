@@ -3,23 +3,8 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/css/main.css">0
 			<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-			<script>
-				var looper;
-				var degrees = 0;
-				var speed = 1;
-				function rotateAnimation(){
-					var elem = document.getElementById("colorwheel");
-						elem.style.transform = "rotate("+degrees+"deg)";
-					looper = setTimeout('rotateAnimation(\''+"colorwheel"+'\','+speed+')',speed);
-					degrees++;
-					if(degrees > 359){
-						degrees = 1;
-					}
-					document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
-				}
-			</script>
 			<script>
 				function rollDice(){
 					var die1 = document.getElementById("die1");
