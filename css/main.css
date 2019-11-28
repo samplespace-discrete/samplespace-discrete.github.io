@@ -52,6 +52,13 @@ body {
   box-sizing: border-box;
 }
 
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .column {
   float:left;
   width:33.33%
@@ -64,8 +71,6 @@ body {
   clear: both;
   display: table;
 }
-
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
