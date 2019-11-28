@@ -16,14 +16,12 @@ div.dice {
   margin: auto;
 }
 
+#wheel {
+  size: 100px;
+}
+
 #coin {
-  background: #F5F5F5;
-  border: #999 1px solid;
-  width: 100px;
-  height: 100px;
-  font-size: 50px;
-  text-align: center;
-  margin: auto;
+  size: 100px;
 }
 
 #card {

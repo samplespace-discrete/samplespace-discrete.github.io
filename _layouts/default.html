@@ -23,7 +23,8 @@
 				function tossCoin(){
 					var coin = document.getElementById("coin");
 					var co = Math.floor(Math.random() * 2) + 1;
-					coin.innerHTML = co;
+					if(co == 1) document.getElementById("coin").src = "https://upload.wikimedia.org/wikipedia/commons/9/96/PhilippinesNewGen5PesoObverse.png";
+					else document.getElementById("coin").src = "https://upload.wikimedia.org/wikipedia/commons/7/70/PhilippinesNewGen5PesoReverse.png";
 				}
 			</script>
 		</head>

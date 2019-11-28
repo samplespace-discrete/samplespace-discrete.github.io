@@ -24,7 +24,7 @@
     var defaults = {
         angle: 0,
         speed: 0,
-        inertia: 0,
+        inertia: 1,
         minimalSpeed: 0.001,
         minimalAngleChange: 0.1,
         step: 0,
