@@ -85,7 +85,8 @@ function generateQuiz (exercisesPage, quizContainer, resultsContainer, submitBut
 			);
 			
 		}
-		quizContainer.innerHTML = output.join('');
+		document.getElementById("quizContainer").innerHTML = output.join('');
+		//quizContainer.innerHTML = output.join('');
 		
 	} // questions function
 	
