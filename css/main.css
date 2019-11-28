@@ -53,6 +53,7 @@ body {
 }
 
 .column {
+  float:left;
   padding: 5px;
 }
 
@@ -63,12 +64,7 @@ body {
   display: table;
 }
 
-.row{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
