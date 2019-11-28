@@ -6,33 +6,24 @@ body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
 }
 
-div.dice {
-  background: #F5F5F5;
-  border: #999 1px solid;
+#dice {
   width: 100px;
   height: 100px;
-  font-size: 50px;
-  text-align: center;
-  margin: auto;
 }
 
 #wheel {
-  size: 100px;
+  width: 500px;
+  height: 500px;
 }
 
 #coin {
-  size: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 #card {
-  height: 141px;
-  width: 100px;
-  background: #F5F5F5;
-  border: #999 1px solid;
-  padding: 10px;
-  font-size: 50px;
-  text-align: center;
-  margin: auto;
+  height: 341px;
+  width: 300px;
 }
 
 #bullet {
