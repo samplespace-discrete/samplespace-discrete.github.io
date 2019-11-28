@@ -6,6 +6,11 @@ body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
 }
 
+.wheel{
+  background: url(https://www.pngkey.com/png/full/305-3059540_blank-wheel-of-fortune.png);
+  background-size: contain;
+}
+
 div.dice {
   background: #F5F5F5;
   border: #999 1px solid;
