@@ -112,8 +112,11 @@ function showQuestions(direction)
 	
 } // questions function
 
-function showResults()
+function showResults(evt)
 {
+	evt.preventDefault;
+	evt.stopPropagation();
+	
 	var questions = this.exercisesPage[this.questionNumber];
 	
 	var quizAnswers = this.quizContainer.querySelectorAll('.answers');
