@@ -8,11 +8,15 @@ title: Sample Space Exercises
 	Directions: Read each question below. Select your answer by clicking on its button. 
 	</p>
 	
-<div id = "quiz"> </div>
+<div id = "quiz"> 
+	
+	<button onclick= "document.getElementById("quiz").innerHTML = showQuestions()"> Proceed to the Quiz </button>
+
+</div>
 
 <button id = "previous"> Previous Question </button>
 <button id = "next"> Next Question </button>
-<button id = "submit" onclick = "showResults"> Submit Quiz </button>
+<button id = "submit" onclick = "document.getElementById("submit").innerHTML = showResults()"> Submit Quiz </button>
 	
 <div id = "result">  </div>
 
