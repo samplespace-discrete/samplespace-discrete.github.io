@@ -6,7 +6,7 @@ body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
 }
 
-.wheel{
+div.wheel{
   width: 200px;
   height: 200px;
   background: url("305-3059540_blank-wheel-of-fortune.png");
