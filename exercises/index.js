@@ -112,10 +112,10 @@ function showQuestions(direction)
 	
 } // questions function
 
-function showResults(evt)
+function showResults()
 {
-	evt.preventDefault;
-	evt.stopPropagation();
+	//evt.preventDefault();
+	//evt.stopPropagation();
 	
 	var questions = this.exercisesPage[this.questionNumber];
 	
