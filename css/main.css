@@ -7,6 +7,8 @@ body {
 }
 
 .wheel{
+  width: 200px;
+  height: 200px;
   background: url(https://www.pngkey.com/png/full/305-3059540_blank-wheel-of-fortune.png);
   background-size: contain;
 }
