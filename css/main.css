@@ -59,6 +59,7 @@ body {
 .column {
   float:left;
   width:33.33%;
+  padding: 7px;
 }
 
 /* Clearfix (clear floats) */
