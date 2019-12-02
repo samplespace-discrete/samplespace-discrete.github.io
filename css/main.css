@@ -26,6 +26,10 @@ body {
   width: 200px;
 }
 
+#cards {
+  height: 150%;
+}
+
 #bullet {
   font-size: 1.5em;
 }
