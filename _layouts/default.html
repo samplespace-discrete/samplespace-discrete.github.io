@@ -18,10 +18,67 @@
 				}
 			</script>
 			<script>
+				function shuffleCard(){
+					var card = document.getElementById("card");
+					document.getElementById("card").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSla1603lw0Qkb4aUy-nozo0w7XsYTbxts0XKaqzYD2W_VqgV8J";
+				}
+			</script>
+			<script>
 				function drawCard(){
 					var card = document.getElementById("card");
 					var c = Math.floor(Math.random() * 52) + 1;
-					card.innerHTML = c;
+					if(c == 1) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/01_of_clubs_A.svg/200px-01_of_clubs_A.svg.png";
+					else if(c == 2) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/02_of_clubs.svg/200px-02_of_clubs.svg.png";
+					else if(c == 3) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/03_of_clubs.svg/200px-03_of_clubs.svg.png";
+					else if(c == 4) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/04_of_clubs.svg/200px-04_of_clubs.svg.png";
+					else if(c == 5) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/05_of_clubs.svg/200px-05_of_clubs.svg.png";
+					else if(c == 6) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/06_of_clubs.svg/200px-06_of_clubs.svg.png";
+					else if(c == 7) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/07_of_clubs.svg/200px-07_of_clubs.svg.png";
+					else if(c == 8) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/08_of_clubs.svg/200px-08_of_clubs.svg.png";
+					else if(c == 9) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/09_of_clubs.svg/200px-09_of_clubs.svg.png";
+					else if(c == 10) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/10_of_clubs_-_David_Bellot.svg/200px-10_of_clubs_-_David_Bellot.svg.png";
+					else if(c == 11) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/d/da/37_J_di_fiori.jpg";
+					else if(c == 12) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/38_Q_di_fiori.jpg";
+					else if(c == 13) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/9/92/39_K_di_fiori.jpg";
+					else if(c == 14) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/01_of_spades_A.svg/200px-01_of_spades_A.svg.png";
+					else if(c == 15) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/02_of_spades.svg/200px-02_of_spades.svg.png";
+					else if(c == 16) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/03_of_spades.svg/200px-03_of_spades.svg.png";
+					else if(c == 17) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/04_of_spades.svg/200px-04_of_spades.svg.png";
+					else if(c == 18) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/05_of_spades.svg/200px-05_of_spades.svg.png";
+					else if(c == 19) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/06_of_spades.svg/200px-06_of_spades.svg.png";
+					else if(c == 20) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/07_of_spades.svg/200px-07_of_spades.svg.png";
+					else if(c == 21) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/08_of_spades.svg/200px-08_of_spades.svg.png";
+					else if(c == 22) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/09_of_spades.svg/200px-09_of_spades.svg.png";
+					else if(c == 23) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/10_of_spades_-_David_Bellot.svg/200px-10_of_spades_-_David_Bellot.svg.png";
+					else if(c == 24) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/4/46/50_J_di_picche.jpg";
+					else if(c == 25) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/6/65/51_Q_di_picche.jpg";
+					else if(c == 26) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/a/a5/52_K_di_picche.jpg";
+					else if(c == 27) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/01_of_hearts_A.svg/200px-01_of_hearts_A.svg.png";
+					else if(c == 28) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/02_of_hearts.svg/200px-02_of_hearts.svg.png";
+					else if(c == 29) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/03_of_hearts.svg/200px-03_of_hearts.svg.png";
+					else if(c == 30) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/04_of_hearts.svg/200px-04_of_hearts.svg.png";
+					else if(c == 31) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/05_of_hearts.svg/200px-05_of_hearts.svg.png";
+					else if(c == 32) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/06_of_hearts.svg/200px-06_of_hearts.svg.png";
+					else if(c == 33) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/07_of_hearts.svg/200px-07_of_hearts.svg.png";
+					else if(c == 34) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/08_of_hearts.svg/200px-08_of_hearts.svg.png";
+					else if(c == 35) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/09_of_hearts.svg/200px-09_of_hearts.svg.png";
+					else if(c == 36) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/10_of_hearts_-_David_Bellot.svg/200px-10_of_hearts_-_David_Bellot.svg.png";
+					else if(c == 37) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/8/86/11_J_di_cuori.jpg";
+					else if(c == 38) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/d/dc/12_Q_di_cuori.jpg";
+					else if(c == 39) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/5/5b/13_K_di_cuori.jpg";
+					else if(c == 40) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/01_of_diamonds_A.svg/200px-01_of_diamonds_A.svg.png";
+					else if(c == 41) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/02_of_diamonds.svg/200px-02_of_diamonds.svg.png";
+					else if(c == 42) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/03_of_diamonds.svg/200px-03_of_diamonds.svg.png";
+					else if(c == 43) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/04_of_diamonds.svg/200px-04_of_diamonds.svg.png";
+					else if(c == 44) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/05_of_diamonds.svg/200px-05_of_diamonds.svg.png";
+					else if(c == 45) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/06_of_diamonds.svg/200px-06_of_diamonds.svg.png";
+					else if(c == 46) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/07_of_diamonds.svg/200px-07_of_diamonds.svg.png";
+					else if(c == 47) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/08_of_diamonds.svg/200px-08_of_diamonds.svg.png";
+					else if(c == 48) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/09_of_diamonds.svg/200px-09_of_diamonds.svg.png";
+					else if(c == 49) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/10_of_diamonds_-_David_Bellot.svg/200px-10_of_diamonds_-_David_Bellot.svg.png";
+					else if(c == 50) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/3/33/24_J_di_quadri.jpg";
+					else if(c == 51) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/d/da/25_Q_di_quadri.jpg";
+					else if(c == 52) document.getElementById("card").src = "https://upload.wikimedia.org/wikipedia/commons/8/8d/26_K_di_quadri.jpg";
 				}
 			</script>
 			<script>
