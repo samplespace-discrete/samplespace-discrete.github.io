@@ -11,7 +11,7 @@ body {
 }
 
 hr{
-  border-color: lightblue;
+  border-color: #52311c;
 }
 
 #dice {
@@ -112,7 +112,7 @@ a {
 }
 
 a.headmenu{
-  color: white;
+  color: #52311c;
 }
 
 a:hover {
@@ -134,9 +134,13 @@ p {
 footer {
     font-size: 1.5em;
 }
+
 nav {
-    font-size: 30px;
-    background-color: #52311c;
+  font-size: 30px;
+  border: solid #52311c;
+  padding: 5px;
+  text-align:center;
+  border-radius: 25px;
 }
 
 ul.posts { 
