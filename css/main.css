@@ -26,7 +26,12 @@ hr{
   height: 100px;
 }
 
+#arrow{
+  position: absolute;
+}
+
 #wheel {
+  position: relative;
   width: 500px;
   height: 500px;
 }
