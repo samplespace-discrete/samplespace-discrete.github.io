@@ -8,6 +8,7 @@ body {
 
 .body{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
+  margin: 60px auto;
 }
 
 #dice {
