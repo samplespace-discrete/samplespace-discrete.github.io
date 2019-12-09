@@ -4,17 +4,9 @@ title: Sample Space Exercises
 ---
 	<h1>{{ page.title }}</h1>
 	
-	<p onpageshow="showQuestions()">
-	Directions: Read each question below. Select your answer by clicking on its button. 
-	</p>
+	<script type = "text/javascript" src = "index.js"> </script>
+	<script type = "text/javascript" src = "indexQuestions.js"> </script>
 	
-<div id = "quiz"> </div>
-
-<button id = "previous" onclick="showQuestions('previous')"> Previous Question </button>
-<button id = "next" onclick="showQuestions('next')"> Next Question </button>
-<button id = "submit" onclick="showResults(questions, quizContainer, resultsContainer)"> Submit Quiz </button>
+	<p> Directions: Read each question below. Select your answer by clicking on its button. </p>
 	
-<div id = "result">  </div>
-<br><br><br><br><br><br>
-    
-<script type = "text/javascript" src = "index.js"> </script>
+<form id = "quiz-wrap"> </form>
