@@ -1,153 +1,94 @@
-var exercisesPage = [
-    {
-      question: "1.  What is the sample space for choosing an odd number from 1 to 11 at random?",
-      answers: [
-         "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11",
-         "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11}",
-         "{1, 3, 5, 7, 9 11}",
-         "None of the above"
-      ],
-      correctAnswer: "c"
-   },
-   {
-      question: "2.  What is the sample space for choosing a prime number less than 15 at random?",
-      answers: [
-         "{2, 3, 5, 7, 11, 13, 15}",
-         "{2, 3, 5, 7, 11, 13}",
-         "{2, 3, 5, 7, 9, 11, 13}",
-         "All of the above"
-      ],
-      correctAnswer: "c"
-   },
-   {
-      question: "3.  What is the sample space for choosing 1 jelly bean at random from a jar containing 5 red, 7 blue and 2 green jelly beans?",
-      answers: [
-        "{5, 7, 2}",
-        "{5 red, 7 blue, 2 green}",
-        "{red, blue, green}",
-        "None of the above"
-      ],
-      correctAnswer: "d"
-   },
-   {
-      question: "4.  What is the sample space for choosing 1 letter at random from 5 vowels?",
-      answers: [
-        "{a, e, i, o, u}",
-        "{v, o, w, e, l}",
-        "{1, 2, 3, 4, 5}",
-        "None of the above"
-      ],
-      correctAnswer: "a"
-   },
-   {
-      question: "5.  What is the sample space for choosing 1 letter at random from the word DIVIDE?",
-      answers: [
-        "{d, i, v, i, d, e}",
-        "{1, 2, 3, 4, 5, 6}",
-        "{d, i, v, e}",
-        "None of the above",
-      ],
-      correctAnswer: "a"
-   } 
-];
+/* [QUIZ ENGINE] */
+var quiz = {
+  draw : function () {
+  // quiz.draw() : draw the quiz
 
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('result');
-var submitButton = document.getElementById('submit');
+    // Fetch the HTML quiz wrapper
+    var wrapper = document.getElementById("quiz-wrap");
 
-var questionNumber = 0;
+    // Loop through all the questions
+    // Create all the necessary HTML elements
+    for (var index in questions) {
+      var number = parseInt(index) + 1; // The current question number
+      var qwrap = document.createElement("div"); // A div wrapper to hold this question and options
+      qwrap.classList.add("question"); // CSS class, for cosmetics
 
-function showQuestions(direction)
-{
-	var index;
-	
-	//inaalam niya lang kung ano sa previous or next button yung naclick
-	//kung next, edi iterate tayo sa next element or index
-	//kung previous, edi ataras lang tayo ng isang element or index
-	if(direction === 'next') {
-		index = this.questionNumber++;
-	}
-	else if(direction === 'previous'){
-		index = this.questionNumber--;
-	}
-	else {
-		index = this.questionNumber;
-	}
-	
-	//error handling kapag nasa last question na siya. 
-	//kung gusto mo na babalik siya from question 1, then equate om lang yung this.questionNumber to 0 uli
-	if(index >= 5) {
-		return;
-	}
-	
-	//kunin mo sa exercisesPage array mo yung question
-	var question = this.exercisesPage[index];
-	
-	var output = []
-	var answers = [];
-	
-	//para lang to sa pagdidisplay nung question number
-	var i = 0;
-	
-	for (letter of question.answers)
-	{
-		answers.push
-		(
-			'<label>' + '<input type = "radio" name = "question' + i++ + '" value = "' + letter + '">'
-			+ letter + ' ' + '</label>'
-			
-		);
-		
-	}
-	
-	output.push
-	(
-		'<div class="question">' + question.question + '</div>'
-		+ '<div class="answers">' + answers.join('') + '</div>'
-		
-	);
-	
-	
-	quizContainer.innerHTML = output.join('');
-	
-} // questions function
+      // The question - <h1> header
+      var question = document.createElement("h1");
+      question.innerHTML = number + ") " + questions[index]['q'];
+      qwrap.appendChild(question);
 
-function showResults()
-{
-	//evt.preventDefault();
-	//evt.stopPropagation();
-	
-	var questions = this.exercisesPage[this.questionNumber];
-	
-	var quizAnswers = this.quizContainer.querySelectorAll('.answers');
-	
-	var userAnswers = '';
-	var correctAnswers = 0;
-	
-	for (var i = 0; i < questions.length; i++)
-	{
-		userAnswers = (quizAnswers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-		
-		if (userAnswers === questions[i].correctAnswers)
-		{
-			correctAnswers++;
-			
-			quizAnswers[i].style.color = 'lightgreen';
-			
-		}
-		else
-		{
-			quizAnswers[i].style.color = 'red';
-			
-		}
-		this.resultsContainer.innerHTML = correctAnswers + ' out of ' + questions.length;
-	}
-	
-	//submitButton.onclick = function(){showResults(questions, quizContainer, resultsContainer);}
-	
-} //results function
+      // The options - <input> radio buttons and <label>
+      for (var oindex in questions[index]['o']) {
+        // The <label> tag
+        var label = document.createElement("label");
+        qwrap.appendChild(label);
 
-function generateQuiz (index)
-{	
-	showQuestions (questions);
-}
+        // The <option> tag
+        var option = document.createElement("input");
+        option.type = "radio";
+        option.value = oindex;
+        option.required = true;
+        option.classList.add("oquiz"); // Will explain this later in function submit below
+        
+        // Remember that a radio button group must share the same name
+        option.name = "quiz-" + number;
+        label.appendChild(option);
+
+        // Add the option text
+        var otext = document.createTextNode(questions[index]['o'][oindex]);
+        label.appendChild(otext);
+      }
+
+      // Finally, add this question to the main HTML quiz wrapper
+      wrapper.appendChild(qwrap);
+    }
+
+    // Attach submit button + event handler to the quiz wrapper
+    var submitbutton = document.createElement("input");
+    submitbutton.type = "submit";
+    wrapper.appendChild(submitbutton);
+    wrapper.addEventListener("submit", quiz.submit);
+  },
+
+  submit : function (evt) {
+  // quiz.submit() : Handle the calculations when the user submits to quiz
+
+    // Stop the form from submitting
+    evt.preventDefault();
+    evt.stopPropagation();
+
+    // Remember that we added an "oquiz" class to all the options?
+    // We can easily get all the selected options this way
+    var selected = document.querySelectorAll(".oquiz:checked");
+
+    // Get the score
+    var score = 0;
+    for (var index in questions) {
+      if (selected[index].value == questions[index]['a']) {
+        score++;
+      }
+    }
+
+    // We can calculate the score now
+    var total = selected.length;
+    var percent = score / total ;
+
+    // Update and show the score
+    // Instead of creating elements, we can also directly alter the inner HTML
+    var html = "<h1>";
+    if (percent>=0.7) {
+      html += "WELL DONE!";
+    } else if (percent>=0.4) {
+      html += "NOT BAD!";
+    } else {
+      html += "TRY HARDER!";
+    }
+    html += "</h1>";
+    html += "<div>You scored " + score + " out of " + total + ".</div>";
+    document.getElementById("quiz-wrap").innerHTML = html;
+  }
+};
+
+/* [INIT] */
+window.addEventListener("load", quiz.draw);
