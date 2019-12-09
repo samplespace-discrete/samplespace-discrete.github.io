@@ -17,7 +17,7 @@ var questions = [
          "{2, 3, 5, 7, 9, 11, 13}",
          "All of the above"
       ],
-      a: 2
+      a: 1
    },
    {
       q: "3.  What is the sample space for choosing 1 jelly bean at random from a jar containing 5 red, 7 blue and 2 green jelly beans?",
@@ -47,6 +47,6 @@ var questions = [
         "{d, i, v, e}",
         "None of the above",
       ],
-      a: 0
+      a: 2
    } 
 ];
