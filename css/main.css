@@ -50,6 +50,10 @@ body {
   width: 50%;
 }
 
+.mainmenu{
+  font-size: 35px;
+}
+
 #menu {
   display: block;
   margin-left: auto;
