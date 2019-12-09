@@ -1,14 +1,14 @@
 body {
     margin: 60px auto;
-    width: 50%;
+    width: 75%;
     background-color: #c04000;
     font-family: 'Indie Flower', cursive;
-    /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");*/
+    background-image: url("https://hdwallsbox.com/wallpapers/l/1920x1200/73/wood-brown-solid-oak-1920x1200-72672.jpg");
 }
 
 .body{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
-  margin: 60px auto;
+  padding: 60px;
 }
 
 #dice {
