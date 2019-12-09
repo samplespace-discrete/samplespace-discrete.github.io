@@ -21,7 +21,11 @@ hr{
 .buttonlayout{
   color: white;
   background-color: #52311c;
+  border: none;
   border-radius: 25px;
+  font-family: 'Indie Flower', cursive;
+  padding: 15px 32px;
+  font-size: 17px;
 }
 
 #dice {
