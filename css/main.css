@@ -16,6 +16,9 @@ hr{
 
 .button{
   text-align: center;
+}
+
+.buttonlayout{
   color: white;
   background-color: #52311c;
   border-radius: 25px;
@@ -28,10 +31,10 @@ hr{
 
 #arrow{
   position: absolute;
-  top: 60px;
-  left: 80px;
-  width: 100px;
-  height: 100px;
+  top: 0px;
+  left: 570px;
+  width: 86px;
+  height: 50px;
 }
 
 #wheel {
