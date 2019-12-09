@@ -1,9 +1,13 @@
 body {
     margin: 60px auto;
     width: 50%;
-    background-color: #fcf4ac;
+    background-color: #c04000;
     font-family: 'Indie Flower', cursive;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
+    /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");*/
+}
+
+.body{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
 }
 
 #dice {
