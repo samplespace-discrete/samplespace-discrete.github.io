@@ -10,6 +10,10 @@ body {
   padding: 100px;
 }
 
+hr{
+  border-color: lightblue;
+}
+
 #dice {
   width: 100px;
   height: 100px;
@@ -106,6 +110,11 @@ a {
     text-decoration: none;
     color: #c04000;
 }
+
+a.headmenu{
+  color: white;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -126,7 +135,8 @@ footer {
     font-size: 1.5em;
 }
 nav {
-    font-size: 35px;
+    font-size: 30px;
+    background-color: #52311c;
 }
 
 ul.posts { 
