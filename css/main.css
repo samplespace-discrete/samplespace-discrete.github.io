@@ -113,6 +113,15 @@ a {
 
 a.headmenu{
   color: #52311c;
+  border: solid #52311c;
+  padding: 5px;
+  border-radius: 25px;
+
+}
+
+a.headmenu:hover{
+  color: white;
+  background-color: #52311c;
 }
 
 a:hover {
@@ -137,11 +146,8 @@ footer {
 
 nav {
   font-size: 30px;
-  border: solid #52311c;
-  padding: 5px;
   text-align:center;
-  border-radius: 25px;
-}
+  }
 
 ul.posts { 
     margin: 20px auto 40px; 
