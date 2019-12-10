@@ -6,8 +6,8 @@ body {
 }
 
 .body{
-  background-color: linear-gradient(rgba(65,105,225,0.5), rgba(65,105,225,0.5));/* url("https://hdwallsbox.com/wallpapers/l/1920x1200/73/wood-brown-solid-oak-1920x1200-72672.jpg");*/
-  padding: 100px;
+  background-image: linear-gradient(rgba(65,105,225,0.5), rgba(65,105,225,0.5)), url("https://hdwallsbox.com/wallpapers/l/1920x1200/73/wood-brown-solid-oak-1920x1200-72672.jpg");
+  padding: 100px,
   border: 2px;
   border-color: #ff6347;
   border-radius: 8px;
