@@ -3,13 +3,13 @@ body {
     width: 75%;
     font-family: 'Indie Flower', cursive;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTzd0hjk4aSX5mA1kNlRPtJXgxCFPMspia-LV-iZs_3RHMsZgfe");
-   /* background-image: url("https://hdwallsbox.com/wallpapers/l/1920x1200/73/wood-brown-solid-oak-1920x1200-72672.jpg"); */
 }
 
 .body{
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2; */
+  background-image: url("https://hdwallsbox.com/wallpapers/l/1920x1200/73/wood-brown-solid-oak-1920x1200-72672.jpg");
   padding: 100px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 hr{
