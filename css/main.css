@@ -153,6 +153,11 @@ a.defmenu{
   font-size: 15px;
 }
 
+a.defmenu:hover{
+  color: white;
+  background-color: #52311c;
+  text-decoration: none;
+}
 
 a.headmenu:hover{
   color: white;
