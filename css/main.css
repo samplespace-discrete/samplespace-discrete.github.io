@@ -8,8 +8,8 @@ body {
 .body{
   background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://hdwallsbox.com/wallpapers/l/1920x1200/73/wood-brown-solid-oak-1920x1200-72672.jpg");
   padding: 100px;
-  border: solid #52311c;
-  border-radius: 25px;
+  border: solid tomato;
+  border-radius: 15px;
 }
 
 hr{
