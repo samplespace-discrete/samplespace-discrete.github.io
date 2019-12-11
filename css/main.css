@@ -143,8 +143,16 @@ a.headmenu{
   border: solid #52311c;
   padding: 15px 32px;
   border-radius: 25px;
-
 }
+
+a.defmenu{
+  color: #52311c;
+  border: solid #52311c;
+  padding: 10px 37px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
 
 a.headmenu:hover{
   color: white;
